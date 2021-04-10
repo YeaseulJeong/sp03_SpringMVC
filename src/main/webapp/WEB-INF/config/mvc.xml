@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!-- 어떤 요청이 들어왔을 때  _main 에서 main.do  를 name 에 써주고 :: 어떤 컨트롤러가 실행되어야 하는지  를 class에 써준다 -->
+<!-- _이 내용을 HandlerMapping ( ControllerFactory)가 읽는다  _ 이때 HandlerMapping bean 은 자동으로 만들어져 있다 (이미 library로 존재함)-->
+
+<bean name="/main.do" class="com.encore.spring.controller.MainController"> </bean>
+</beans>
